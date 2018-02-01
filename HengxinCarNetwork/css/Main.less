@@ -1,0 +1,347 @@
+body{
+    margin: 0;
+    padding: 0; 
+}
+#One {
+    display: flex;
+    flex-direction: column;
+
+    #header_menu ul li:nth-child(2) {
+        background: #ff0000;
+    }
+
+    #header_menu ul li:nth-child(3) i{
+       margin:0;
+    }
+
+    #header_menu ul li:hover {
+        background-color: orangered;
+    }
+
+    .title {
+        flex: 1;
+        margin: 0;
+        padding: 0;
+    }
+
+    #Content {
+        display: flex;
+        flex-direction: column;
+
+        .Content_Path {
+            //          border: solid 1px blue;
+            width: 1160px;
+            margin: auto;
+            padding-top: 15px;
+            height: 40px;
+
+            a {
+                color: black;
+                text-decoration: none;
+                font-size: 14px;
+            }
+
+            a:hover {
+                color: red;
+            }
+        }
+
+        .Content_CarType {
+            border: solid 1px #CCCCCC;
+            width: 1160px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+
+            .CarType_Row {
+                border-bottom: 1px solid #CCCCCC;
+                flex: 1;
+                display: flex;
+                flex-direction: row;
+
+                span {
+                    width: 80px;
+                    text-align: center;
+                    padding-top: 12px;
+                    color: dimgray
+                }
+
+                p {
+                    position: relative;
+                    top: 13px;
+                    font-size: 14px;
+                    color: orange;
+                }
+
+                i {
+                    position: relative;
+                    top: 14px;
+                    left: 12px;
+                    //                  border: solid 1px black;
+                    width: 20px;
+                    height: 20px;
+                    display: block;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    margin-left: 20px;
+
+                    li {
+                        /*border:solid 1px black;*/
+                        margin-top: 12px;
+                        margin-right: 20px;
+                        cursor: pointer; //设置光标为手型
+                        float: left;
+                    }
+
+                    li:hover {
+                        color: orange;
+                    }
+                }
+            }
+
+            div:first-child {
+                i {
+                    background: url(../../images/ui-icons_cc0000_256x240.png)no-repeat;
+                    background-position: -180px 0;
+                }
+            }
+
+            div:nth-child(2) {
+                i {
+                    background: url(../../images/ui-icons_cc0000_256x240.png)no-repeat;
+                    background-position: -224px 0;
+                }
+            }
+
+            div:nth-child(3) {
+                i {
+                    background: url(../../images/ui-icons_cc0000_256x240.png)no-repeat;
+                    background-position: -202px 0;
+                }
+            }
+        }
+
+        .Content_Contrast {
+            border: solid 1px #CCCCCC;
+            width: 1160px;
+            margin: 20px auto;
+            height: 50px;
+            background: #EEEEEE;
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            ul li {
+                float: left;
+                text-align: center;
+                padding-top: 12px;
+                width: 100px;
+                height: 48px;
+                list-style: none;
+                border-right: solid 1px #CCCCCC;
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+
+            li:hover {
+                background: orange;
+
+                a {
+                    color: white;
+                }
+            }
+        }
+
+        .container {
+            padding: 0;
+            width: 1160px;
+            /*border:solid 1px red;*/
+            text-align: center;
+        }
+
+        .container div:nth-child(1) div {
+            height: 400px;
+            padding: 10px;
+            /*border: solid 1px red;*/
+            .div_One-Content:hover {
+                border: solid 1px orange;
+            }
+
+            .div_One-Content {
+                margin-bottom: 20px;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                border: solid 1px #CCCCCC;
+                text-decoration: none;
+                /*z-index: 100;*/
+                /*background: blue;*/
+                a {
+                    border: solid 1px #ccc;
+                    background: red;
+                    opacity: 0;
+                    width: 95%;
+                    height: 95%;
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+
+                .div_One-Title {
+                    margin: 20px auto;
+                    padding: 0;
+                    width: 150px;
+                    height: 100px;
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        text-align: left;
+                        font-size: 20px;
+                        flex: 1;
+                        /*border: solid 1px red;*/
+                        color: orange;
+
+                        b {
+                            float: right;
+                        }
+                    }
+
+                    span:first-child {
+                        border-bottom: solid 1px #CCCCCC;
+                    }
+
+                    p {
+                        /*border: solid 1px red;*/
+                        text-align: center;
+                        padding-top: 5px;
+                        flex: 1;
+                        background: red;
+                        color: white;
+                        border-radius: 2px;
+                    }
+                }
+
+
+
+                .div_One-Info {
+                    display: flex;
+                    flex-direction: column;
+                    /*border: solid 1px red;*/
+                    height: 100px;
+
+                    b {
+                        flex: 1;
+                    }
+
+                    p {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+
+        .container #rowTow {
+            margin: 20px -5px 0 -5px;
+        }
+
+        .container #rowTow div {
+            border: solid 1px #ccc;
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            height: 50px;
+
+            a:first-child {
+                display: inline-block;
+                width: 100%;
+                margin: 0;
+                font-size: 32px;
+                text-decoration: none;
+            }
+
+            a {
+                display: inline-block;
+                margin-top: 12px;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            a:hover {
+                color: orange;
+            }
+
+            .astle {
+                color: #CCCCCC;
+            }
+
+            .csstle {
+                display: inline-block;
+                margin-top: 12px;
+                color: #0094ff;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        }
+
+        .container #rowTow div span {
+            display: inline-block;
+            text-align: center;
+            border: solid 1px #CCCCCC;
+            cursor: pointer;
+            height: 18px;
+            border-radius: 50%;
+            width: 18px;
+            font-size: 10px;
+            margin: 12px 2px 0 2px;
+        }
+
+        .container #rowTow div span:hover {
+            display: inline-block;
+            color: red;
+            background: #CCCCCC;
+        }
+
+        .spanslle {
+            display: inline-block;
+            color: red;
+            background: #CCCCCC;
+        }
+    }
+
+    #CopyRight {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+
+        .Copy_One {
+            text-align: center;
+            margin-top: 40px;
+
+            span {
+                font-size: 32px;
+            }
+        }
+
+        div:nth-child(2) {
+            width: 1160px;
+            margin: auto;
+        }
+    }
+}

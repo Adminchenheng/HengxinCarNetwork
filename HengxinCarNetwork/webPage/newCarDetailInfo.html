@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <link href="../css/newCarDetail.css" rel="stylesheet" />
+        <link href="../css/bootstrap.css" rel="stylesheet" />
+        <script src="../js/jquery-2.1.0.js"></script>
+        <script src="../js/angular.js"></script>
+        <script src="../js/myfocus-2.0.1.min.js"></script>
+        <script src="../js/dataScript/newCarDetail.js"></script>
+		<script>	
+			myFocus.set({
+				id:'picbox',//ID
+				pattern:'mF_fscreen_tb',//风格
+				loadIMGTimeout:1,
+				//time:4,//切换时间间隔(秒)
+				//trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+//				loadIMGTimeout:3;
+			});			
+		</script>
+	</head>
+	<body>
+		<div id="Detail-Demo" ng-app="appDemo" ng-controller="contDemo">
+			<div class="Title-item" ng-include="'TitlePage.html'"></div>
+            <div class="Detail-Content">
+                <nav>
+                    <a href="HomePage.html">首页</a>&nbsp;&nbsp;>&nbsp;
+                    <a href="newCarPage.html">新车</a>&nbsp;&nbsp;>&nbsp;
+                    <span>本田思域 2017款  自享尊贵</span>
+                </nav>
+                <div class="mian_content">
+                    <div class="photo-wrap" id="picbox">
+                        <div class="pic">
+                            <ul>
+                                <li ng-repeat="item in newCarPic"><a href="#1"><img src="../img/newCarPic/{{item}}" style="height: 100%;width: 100%;" /></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="CarInfo-new">
+                        <span>{{CarList[0].CarName}}&nbsp;&nbsp;{{CarList[0].CarStyle}}&nbsp;&nbsp;{{CarList[0].CarType}}</span>
+                        <p>厂商指导价：{{CarList[0].Vendor}}万</p>
+                        <div class="warp-Info">
+                            <dt>先开一年(首年花费)</dt>
+                            <dd>
+                                <p>
+                                    <span>首次支出</span>
+                                    <strong>{{CarList[0].FristSpeeding}}万</strong>
+                                    <span>月租</span>
+                                    <strong>{{CarList[0].Rental}}元</strong>
+                                    <span>期限</span>
+                                    <strong>{{CarList[0].Timelimit}}期</strong>
+                                </p>
+                                <ul>
+                                    <li>10%保证金，1年后可退可抵车款</li>
+                                    <li>无需承担购置税和第一年保险</li>
+                                    <li>服务费3000元</li>
+                                </ul>
+                            </dd>
+                            <a href="#"><i></i>4008-152-663</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="Navig-rathing">
+                    <div class="Navig-item">
+                        <a href="#">产品详情</a>
+                        <a href="#">配置参数</a>
+                        <a href="#">常见问题</a>
+                    </div>
+                </div>
+                <img class="img-One" src="../img/Ch00002.png">
+                <img class="img-One" src="../img/Ch00003.png">
+                <div class="paramter-pic">
+                    <span>汽车配置信息</span>
+                    <a href="#">查看更多></a>
+                    <div class="CarInfo-Paramter">
+                        <div class="Paramter-item1">
+                            <ul>
+                                <li>品牌型号<span>本田 思域</span></li>
+                                <li>车辆来源<span>广东 珠海</span></li>
+                                <li>发动机<span>135马力</span></li>
+                                <li>驱动方式<span>前轮驱动</span></li>
+                                <li>车辆级别<span>紧凑型</span></li>
+                            </ul>
+                        </div>
+                        <div class="Paramter-item2">
+                            <ul>
+                                <li>排量<span>2.0L</span></li>
+                                <li>油耗<span>5.5L</span></li>
+                                <li>轴距<span>2612mm</span></li>
+                                <li>车身类型<span>4门5座三厢</span></li>
+                                <li>后备箱容积<span>620L</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <span>汽车图片参数配置信息</span>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="../img/secondPic/CARINFO2018012500001003.jpg" />
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="../img/secondPic/CARINFO2018012500001002.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="CarInfo-Apply">
+                        <span>申请流程</span>
+                        <img src="../img/Ch00005.png" />
+                    </div>
+                    <div id="Car_Problem">
+                        <p><span>常见问题</span></p>
+                        <div class="Problem_List">
+                            <div class="Problem_title">
+                                <b>问</b>
+                                <span>恒信真的可信吗？</span>
+                                <div class="Problem_centent">
+                                    淘车•开走吧是淘车的一种全新租赁产品；首年租赁形式，首付10%起，按月支付月租，新车先开一年，
+                                    且车辆以及车牌所有权归属淘车•开走吧（已限牌城市提供非本地牌照）。
+                                    一年后，您可选择在以下方案中任选其一，并在结清款项后，获得车辆所有权：
+                                    1、一次性购买此车；
+                                    2、3年分期支付月供。
+                                </div>
+                            </div>
+                            <div class="Problem_title">
+                                <b>问</b>
+                                <span>恒信真的可信吗？</span>
+                                <div class="Problem_centent">
+                                    淘车•开走吧是淘车的一种全新租赁产品；首年租赁形式，首付10%起，按月支付月租，新车先开一年，
+                                    且车辆以及车牌所有权归属淘车•开走吧（已限牌城市提供非本地牌照）。
+                                    一年后，您可选择在以下方案中任选其一，并在结清款项后，获得车辆所有权：
+                                    1、一次性购买此车；
+                                    2、3年分期支付月供。
+                                </div>
+                            </div>
+                            <div class="Problem_title">
+                                <b>问</b>
+                                <span>恒信真的可信吗？</span>
+                                <div class="Problem_centent">
+                                    淘车•开走吧是淘车的一种全新租赁产品；首年租赁形式，首付10%起，按月支付月租，新车先开一年，
+                                    且车辆以及车牌所有权归属淘车•开走吧（已限牌城市提供非本地牌照）。
+                                    一年后，您可选择在以下方案中任选其一，并在结清款项后，获得车辆所有权：
+                                    1、一次性购买此车；
+                                    2、3年分期支付月供。
+                                </div>
+                                <div class="Problem_title">
+                                    <b>问</b>
+                                    <span>恒信真的可信吗？</span>
+                                    <div class="Problem_centent">
+                                        淘车•开走吧是淘车的一种全新租赁产品；首年租赁形式，首付10%起，按月支付月租，新车先开一年，
+                                        且车辆以及车牌所有权归属淘车•开走吧（已限牌城市提供非本地牌照）。
+                                        一年后，您可选择在以下方案中任选其一，并在结清款项后，获得车辆所有权：
+                                        1、一次性购买此车；
+                                        2、3年分期支付月供。
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right" ng-include="'CopyRight.html'"></div>
+            </div>
+		</div>            
+    </body>
+</html>

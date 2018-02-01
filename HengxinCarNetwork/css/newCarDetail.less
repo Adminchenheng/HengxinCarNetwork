@@ -1,0 +1,281 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#Detail-Demo{
+    display: flex;
+    flex-direction: column;
+    .Detail-Content{
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        nav{
+            background: #EEEEEE;
+            padding: 10px 100px;
+            height: 40px;
+            color: gray;
+            a{
+                text-align: center;
+                text-decoration: none;
+                color: gray;
+            }
+            a:hover{
+                color: orangered;
+            }
+            span:hover{
+                color: orangered;
+                cursor: pointer;
+            }
+        }        
+        .mian_content .photo-wrap{
+            width: 500px;
+            height:350px;
+            margin: 10px 0 0 80px;
+            float: left;
+            overflow: hidden;
+            background:gray;
+        }
+        .mian_content .CarInfo-new{
+            margin:3px 0 0 20px ; 
+            float: left;
+            width: 650px;
+            height: 350px; 
+            display: flex;
+            flex-direction: column;
+            span{
+                font-size: 22px;
+            }
+            p{
+                margin: 10px 0;
+            }
+            .warp-Info{
+                flex: 1;
+                border-top: solid 1px #CCCCCC;
+                dt{
+                    margin: 10px 0;
+                }
+                dd{
+                    margin: 0;
+                    height:150px;
+                    background: url(../../img/CarOrderInfo/Ch00001.png)no-repeat;
+                    padding: 10px;
+                    p{
+                        margin: 0;
+                        text-align: left;
+                        span{
+                            font-size: 16px;
+                            display: inline-block;
+                            color: gray;
+                            margin: 0 10px 0 10px;
+                            position: relative;
+                            top: -3px;
+                        }
+                        strong{
+                            font-size: 28px;
+                            margin-right:50px;
+                            color: orangered;
+                        }
+                        strong:first-child{float: left;}
+                    }
+                    ul{
+                        margin: 10px 0;
+                        padding: 5px 30px;
+                        li{
+                            color: gray;
+                            font-size: 16px;
+                            margin: 5px 0;
+                        }
+                    }
+                }
+                a{
+                    border: solid 1px orange;
+                    display: inline-block;
+                    text-align: center;
+                    height: 35px;
+                    text-decoration: none;
+                    margin: 20px 0;
+                    color: orangered;
+                    border-radius: 2px;
+                    padding-top: 5px;
+                    width: 150px;
+                    i{
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: text-top;
+                        background: url(../../images/ui-icons_cc0000_256x240.png)-160px 0;
+                    }
+                }
+                a:hover{
+                    border: solid 1px orangered;
+                    color: orangered; 
+                }
+            }
+        }
+        .Navig-rathing{
+            border: solid 1px #CCCCCC;
+            background: #EEEEEE;
+            width:87%;
+            margin:20px auto;
+            .Navig-item{
+                width: 360px;
+                height: 50px;
+                display: flex;
+                flex-direction: row;
+                a{
+                    flex: 1;
+                    border-right: solid 1px #CCCCCC;
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    padding-top:15px ;
+                }
+                a:hover{
+                    color: orangered;
+                }
+            }
+        }
+        .img-One{
+            width: 87%;
+            margin:0 auto;
+        }
+        .paramter-pic{
+            width: 87%;
+            margin: 20px auto;
+            padding: 0;
+            span{
+                border-bottom: solid 2px orangered;
+                display: inline-block;
+                font-size: 22px;
+                margin: 10px 0 2px 0;
+            }
+            a{
+                text-decoration: none;
+                float: right;
+                font-size: 16px;
+                margin-top: 20px;
+                color: #222222;
+            }
+            .CarInfo-Paramter{
+                border-top: solid 1px #CCCCCC;  
+                margin: 20px 0;
+                display: flex;
+                flex-direction: row;
+                .Paramter-item1{
+                    flex: 1;
+                    margin-right: 20px;
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            list-style: none;
+                            border-bottom: solid 1px #CCCCCC;
+                            padding: 15px 10px;
+                            color: gray;
+                            span{
+                                float: right;
+                                font-size: 14px;
+                                border: none;
+                                color: #000000;
+                                margin: 0;                                
+                            }
+                        }
+                    }
+                }              
+                .Paramter-item2{
+                    flex: 1;
+                    margin-left: 20px;
+                     ul{
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            list-style: none;
+                            border-bottom: solid 1px #CCCCCC;
+                            padding: 15px 10px;
+                            color: gray;
+                            span{
+                                float: right;
+                                font-size: 14px;
+                                border: none;
+                                color: #000000;
+                                margin: 0;                                
+                            }
+                        }
+                    }
+                }  
+            }
+            .container{
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                .row{
+                    height: 300px;
+                    margin: 0;
+                    padding:0;
+                    .col-lg-6{
+                        background: orange;
+                        height: 100%;
+                        border: solid 1px white;
+                        margin: 0;
+                        padding: 0; 
+                        img{
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            .CarInfo-Apply{
+                margin: 20px 0;
+                text-align: center;
+                span{
+                    font-size: 26px;
+                    border: none;
+                    display: inline-block;
+                   
+                }
+                img{
+                    width: 100%;
+                }
+            }            
+        }
+        #Car_Problem{
+            p{
+                margin:0;
+                padding: 0;
+                font-size: 32px;
+                span{
+                    position: relative;
+                    top: -1px;
+                    border-bottom: solid 2px orangered;
+                 }
+            }
+            .Problem_List{
+                border: solid 1px #CCCCCC;
+                display: flex;
+                flex-direction: column;
+               .Problem_title{
+                margin: 20px ;
+                    b{
+                        border: solid 1px orangered;
+                        color: orangered;
+                        width: 20px;
+                        text-align: center;
+                        border-radius: 2px;
+                        display: inline-block;                            
+                    }
+                }
+                .Problem_centent{
+                    border: solid 1px #CCCCCC;
+                    border-radius: 5px;
+                    margin:20px  ;
+                    text-align: left;
+                    background: #EEEEEE;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+    
+}

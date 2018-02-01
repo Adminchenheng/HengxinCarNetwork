@@ -1,0 +1,523 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+#demo {
+  display: flex;
+  flex-direction: column ;
+}
+#demo #header_menu ul li:first-child a {
+  width: 300px;
+  background: #FF4500;
+}
+#demo #pic-Carousel {
+  height: 420px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#demo #pic-Carousel #myFocus {
+  width: 1355px;
+  height: 420px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#demo #pic-Carousel #myFocus ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#demo #pic-Carousel #myFocus ul li {
+  margin: 0;
+  padding: 0;
+}
+#demo #pic-Carousel #myFocus ul img {
+  width: 100%;
+  height: 100%;
+}
+#demo .Demo-CarType {
+  width: 300px;
+  position: absolute;
+  top: 210px;
+  left: 1px;
+  margin-left: 99px;
+  background: whitesmoke;
+  display: flex;
+  flex-direction: column;
+}
+#demo .Demo-CarType .CarType-head {
+  flex: 1;
+  border-bottom: solid 1px #CCCCCC;
+}
+#demo .Demo-CarType .CarType-head ul {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+#demo .Demo-CarType .CarType-head ul li {
+  padding-top: 10px ;
+  flex: 1;
+  cursor: pointer;
+}
+#demo .Demo-CarType .CarType-head ul li:first-child {
+  color: orangered;
+  border-bottom: solid 2px red;
+}
+#demo .Demo-CarType .CarInfo-Screen {
+  margin: 0;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px;
+  z-index: 1;
+  border-bottom: solid 1px #CCCCCC;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand span {
+  margin: 10px 0 0 0;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand ul {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand ul li {
+  list-style: none;
+  flex: 1;
+  text-align: left;
+  height: 50px;
+  overflow: hidden;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand ul li a {
+  color: black;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 25px 0 0 10px ;
+  text-decoration: none;
+  margin-left: 3px;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand ul li i {
+  float: right;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px ;
+  background: url(../../img/RightArrow.png) repeat-x;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand ul li:last-child {
+  flex: 0.3;
+}
+#demo .Demo-CarType .CarInfo-Screen .CarType-brand ul li:hover a {
+  color: orangered;
+}
+#demo .Demo-CarType .CarInfo-Screen:hover {
+  background: white;
+  border-bottom: solid 1px #CCCCCC;
+  box-shadow: 0 1px 5px 0 gray;
+}
+#demo .Demo-CarType .CarInfo-Screen:hover .CarType-brand {
+  border: none;
+}
+#demo .Demo-CarType .menu {
+  flex: 7;
+}
+#demo .Demo-CarType .menu .CarType-Screen {
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  margin: 15px ;
+}
+#demo .Demo-CarType .menu .CarType-Screen .Screen-Content {
+  display: flex;
+  flex-direction: column;
+}
+#demo .Demo-CarType .menu .CarType-Screen .Screen-Content span {
+  flex: 1;
+  margin: 15px 0;
+}
+#demo .Demo-CarType .menu .CarType-Screen .Screen-Content ul {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+}
+#demo .Demo-CarType .menu .CarType-Screen .Screen-Content ul li {
+  flex: 1;
+}
+#demo .Demo-CarType .menu .CarType-Screen .Screen-Content:first-child span {
+  margin-top: 0;
+}
+#demo .Demo-CarType .menu:hover {
+  background: white;
+  border-top: solid 1px #CCCCCC;
+  box-shadow: 0 0 0 1px 5px gray;
+}
+#demo .CarInfo-content {
+  height: 800px;
+  background: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px 50px 80px;
+  text-align: center;
+}
+#demo .CarInfo-content span {
+  flex: 1;
+  padding-top: 30px ;
+  font-size: 28px;
+}
+#demo .CarInfo-content .CarInfo-newCar {
+  flex: 4;
+  display: flex;
+  flex-direction: row;
+}
+#demo .CarInfo-content .CarInfo-newCar .Carfirst {
+  flex: 1.2;
+  overflow: hidden;
+}
+#demo .CarInfo-content .CarInfo-newCar .Carfirst a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding-top: 245px ;
+  text-decoration: none;
+  color: black;
+}
+#demo .CarInfo-content .newCar {
+  margin: 0 5px;
+  border: solid 1px #CCCCCC;
+  flex: 1;
+  background: white;
+}
+#demo .CarInfo-content .newCar a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+#demo .CarInfo-content .newCar a span {
+  padding: 0;
+  margin: 20px 20px;
+  display: inline-block;
+  color: black;
+  height:40px;
+  font-size: 16px;
+}
+#demo .CarInfo-content .newCar a p {
+  position: relative;
+  top: 105px;
+  color: grey;
+  font-size: 12px;
+}
+#demo .CarInfo-content .newCar a .newCar-CarMoney {
+  margin: 10px 0;
+  position: relative;
+  padding: 0 20px;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+}
+#demo .CarInfo-content .newCar a .newCar-CarMoney span {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  flex: 1;
+}
+#demo .CarInfo-content .newCar a .newCar-CarMoney span small {
+  float: right;
+  font-size: 16px;
+  color: orangered;
+}
+#demo .CarInfo-content .newCar:hover {
+  box-shadow: 0 1px 5px darkgray;
+}
+#demo .CarInfo-content .Hrie {
+  margin: 0 5px;
+  border: solid 1px #CCCCCC;
+  flex: 1;
+  background: white;
+}
+#demo .CarInfo-content .Hrie a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+#demo .CarInfo-content .Hrie a p:nth-child(1) {
+  color: white;
+  background: orangered;
+  padding: 10px 0;
+  height: 20px;
+}
+#demo .CarInfo-content .Hrie a p:nth-child(2) {
+  margin: 20px 0;
+  height:40px;
+  color: #222222;
+}
+#demo .CarInfo-content .Hrie a .newCar-CarMoney {
+  position: relative;
+  top: 95px;
+  display: flex;
+  flex-direction: column;
+  height: 75px;
+}
+#demo .CarInfo-content .Hrie a .newCar-CarMoney span {
+  margin: 10px 20px;
+  padding: 0;
+  font-size: 16px;
+  color: #222222;
+  text-align: left;
+  flex: 1;
+}
+#demo .CarInfo-content .Hrie a .newCar-CarMoney span small {
+  float: right;
+  font-size: 16px;
+  color: orangered;
+}
+#demo .CarInfo-content .Hrie:hover {
+  box-shadow: 0 1px 5px darkgray;
+}
+#demo .brand-selection {
+  height: 400px;
+  margin: 20px 80px;
+  display: flex;
+  flex-direction: row;
+}
+#demo .brand-selection a {
+  flex: 1.35;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  padding-top: 360px;
+}
+#demo .brand-selection .brand-CarInfo {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+#demo .brand-selection .brand-CarInfo ul {
+  margin: 0 5px;
+  padding: 0;
+  background: white;
+  border: solid 1px #CCCCCC ;
+  flex: 1.2;
+  display: flex;
+  flex-direction: row;
+}
+#demo .brand-selection .brand-CarInfo ul li {
+  list-style: none;
+  border-right: solid 1px #CCCCCC;
+  flex: 1;
+  display: inline-block;
+}
+#demo .brand-selection .brand-CarInfo ul li a {
+  padding-top: 50px;
+  display: inline-block;
+  width: 100%;
+  color: black;
+}
+#demo .brand-selection .brand-CarInfo ul li:last-child {
+  border: none;
+}
+#demo .brand-selection .brand-CarInfo ul li:hover {
+  border-top: solid 2px orangered;
+}
+#demo .brand-selection .brand-CarInfo ul li:hover a {
+  color: orangered;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item {
+  flex: 4;
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: row;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a {
+  flex: 1;
+  border: solid 1px #CCCCCC;
+  margin: 0 5px;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a img {
+  width: 100%;
+  flex: 3;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a span {
+  color: black;
+  flex: 1;
+  font-size: 16px;
+  display:inline-block;
+  margin: 10px 5px 10px 5px;
+  padding: 0;
+  text-align: left;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a .sOne{
+    border:solid 1px red;
+    height:50px;
+    margin:10px 5px 0 5px;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a p {
+  flex: 1;
+  color: black;
+  text-align: left;
+  font-size: 18px;
+  margin: 0 5px;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a .s2 {
+  margin: 0 5px;
+  padding: 0;
+  text-align: left;
+  color: gray;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a ul {
+  flex: 1;
+  margin:0;
+  padding:0;
+  position:relative;
+  top:5px;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a ul li {
+  border: solid 1px blue;
+  margin-left: 5px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 2px;
+  color: orangered;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a ul li:first-child {
+  margin: 0;
+  border: solid 1px orangered;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a ul li:nth-child(2) {
+  border: solid 1px #0099FF;
+  color: #0099FF;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a ul li:nth-child(3) {
+  border: solid 1px olivedrab;
+  color: olivedrab;
+}
+#demo .brand-selection .brand-CarInfo .CarInfo-item a:hover {
+  box-shadow: 0 1px 5px darkgray;
+}
+#demo .img-rathing {
+  width: 1185px;
+  margin: 0 auto;
+}
+#demo .Car-Safe {
+  height: 455px;
+  margin: 20px 80px;
+  display: flex;
+  flex-direction: row;
+}
+#demo .Car-Safe a {
+  flex: 1.09;
+  background: url(../../img/HomePage/Ch0007.png) no-repeat;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 410px;
+}
+#demo .Car-Safe .saleInfo {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1 {
+  flex: 1;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1 a {
+  flex: 1;
+  display: block;
+  margin: 0 15px;
+  padding: 0;
+  height: 100%;
+  border: solid 1px #CCCCCC;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1 a span {
+  color: orangered;
+  border: solid 1px orangered;
+  position: relative;
+  top: 160px;
+  width: 150px;
+  height: 30px;
+  padding-top: 10px;
+  display: inline-block;
+  border-radius: 2px;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1 a:first-child {
+  margin-left: 0;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1 a:last-child {
+  margin-right: 0;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1:last-child {
+  margin: 5px 0 0 0;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1 a:hover {
+  box-shadow: 0 1px 5px darkgray;
+}
+#demo .Car-Safe .saleInfo .saleInfo-item1 a:hover span {
+  color: white;
+  background: orangered;
+}
+#demo .CopyRight {
+  height: 200px;
+  background: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+}
+#demo .CopyRight .CopyRight-item1 {
+  flex: 3;
+  margin: 0 80px;
+}
+#demo .CopyRight .CopyRight-item1 p {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+}
+#demo .CopyRight .CopyRight-item1 p:nth-child(2) {
+  border: none;
+  height: 30px;
+  text-align: center;
+  margin: 0;
+  color: gray;
+}
+#demo .CopyRight .CopyRight-item1 p:nth-child(2) a {
+  height: 30px;
+  text-decoration: none;
+  color: gray;
+  padding-top: 5px;
+  display: inline-block;
+}
+#demo .CopyRight .CopyRight-item1 p:nth-child(2) a img {
+  vertical-align: text-top;
+  position: relative;
+  top: -5px;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+}
+#demo .CopyRight .CopyRight-item2 {
+  flex: 1;
+}

@@ -1,0 +1,6 @@
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Model\bin\Debug\System.Model.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Model\bin\Debug\System.Model.pdb
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Model\obj\Debug\System.Model.csproj.CoreCompileInputs.cache
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Model\obj\Debug\System.Model.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Model\obj\Debug\System.Model.pdb
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Model\obj\Debug\System.Model.csprojResolveAssemblyReference.cache

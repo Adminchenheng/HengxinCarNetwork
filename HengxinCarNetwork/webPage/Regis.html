@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>恒信汽车网-注册</title>
+        <link href="../css/CarRegis.css" rel="stylesheet" />
+        <script src="../js/jquery-2.1.0.js"></script>
+        <script src="../js/angular.js"></script>
+        <script src="../js/dataScript/DataScripts.js"></script>
+	</head>
+	<body>
+		<div class="One" ng-app="appDemo" ng-controller="contDemo">
+			<div class="title">
+				<div id="logo">
+					<img src="../img/logo.jpg" />
+				</div>
+				<div id="titleName">
+					<span>欢迎注册</span>
+				</div>
+				<div id="sign">
+					<span>
+						已有账号?
+						<a href="Login.html">请登录</a>
+					</span>
+				</div>
+			</div>
+			<div class="centent">
+				<div id="ReOne">
+					<div class="ReSon1">
+						<div class="column1">
+							<input type="text" name="txtUserName" placeholder="请输入登录用户名" value="陈恒">
+							<label class="lblUserName">用&nbsp;&nbsp;&nbsp;户&nbsp;&nbsp;&nbsp;名</label>
+						</div>
+						<div class="column2">
+							<span id="s1"><i></i>支持中文、字母、数字等组合，6-10个字符！</span>
+						</div>
+						<div class="column1">
+							<input type="password" name="txtPwd" placeholder="建议至少使用两种以上的字符组合" value="chenheng">
+							<label class="lblPwd">设&nbsp;置&nbsp;密&nbsp;码</label>
+						</div>
+						<div class="column2">
+							<span id="s2"><i></i>建议使用字母、数字、符号两种以上的组合,6-20个字符</span>
+						</div>
+						<div class="column1">
+							<input type="password" name="txtRePwd" placeholder="请再次输入密码" value="chenheng">
+							<label class="lblconfirm">确&nbsp;认&nbsp;密&nbsp;码</label>
+						</div>
+						<div class="column2">
+							<span id="s3"><i></i>请再次输入密码</span>
+						</div>
+						<div class="column1">
+							<input type="text" name="txtPhone" placeholder="请输入联系电话" value="18824370518">
+							<label class="lblPhone">联&nbsp;系&nbsp;电&nbsp;话</label>
+						</div>
+						<div class="column2">
+							<span id="s4"><i></i>验证完毕后，您可以使用该手机登录和找回密码</span>
+						</div>
+						<div class="column1">
+							<input style="width: 310px;" name="txtEntity" type="text" placeholder="请输入身份证号码" value="450981199812191714">
+							<label class="lblValid">身&nbsp;&nbsp;份&nbsp;&nbsp;证</label>
+						</div>
+						<div class="column2">
+							<span id="s5"><i></i>请输入身份号码</span>
+						</div>
+						<div class="column1">
+							<a name="Regis" href="" ng-click="dataRegis()">立即注册</a>
+						</div>
+					</div>
+				</div>
+				<div id="ReTwo">
+					<div id="ReSon2">
+						<div class="ReSuen1">
+							<a href="#"><b></b>企业用户注册</a>
+						</div>
+						<div class="ReSuen2">
+							<a href="#"><i></i><span>INTERNATIONAL<br />&nbsp;&nbsp;&nbsp;CUSTOMERS</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+            <div class="CopyRight">
+                <div class="CopyRight-item1">
+                    <p>经营许可证编号：京ICP备15006372号-5  公安备案号码：京公网安备 11010802020005号        CopyRight © 2015-2018 taoche.com版权所有 珠海恒信信息科技有限公司</p>
+                    <p>
+                        <a href="#"><img src="../img/HomePage/Ch0008.png">经营性网站备案信息</a>
+                        <a href="#"><img src="../img/HomePage/Ch0009.png">珠海斗门警方提醒</a>
+                        <a href="#"><img src="../img/HomePage/Ch0010.png" style="width: 110px;"></a>
+                        <a href="#"><img src="../img/HomePage/Ch0011.png" style="width: 130px;"></a>
+                    </p>
+                </div>
+            </div>	
+            <div class="occ" ng-include="'Occlusion.html'"></div>
+            <script>
+                $('.occ').hide();
+            </script>
+		</div>
+	</body>
+</html>

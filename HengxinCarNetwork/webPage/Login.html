@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人登录_恒信车网</title>
+        <link href="../css/Login.css" rel="stylesheet" />
+        <script src="../js/angular.js"></script>
+        <script src="../js/jquery-2.1.0.js"></script>
+        <script src="../js/dataScript/LoginPageReader.js"></script>
+	</head>
+	<body>
+		<div id="One" ng-app="appDemo" ng-controller="contDemo">
+			<div id="Title" ng-include="'TitlePage.html'"></div>
+			<div id="pic_login">
+				<div class="login">
+					<div class="log_title">
+						<span>账号密码登录</span>
+					</div>
+					<div class="log_UserName">
+						<input type="number" name="txtUid" ng-maxlength="11" ng-minlength="11" value="18824370518" placeholder="请输入手机号">
+					</div>
+					<div class="log_password">
+						<input type="password" name="txtPwd" ng-minlength="6" value="chenyitian" placeholder="请输入密码" />
+					</div>
+					<div class="log_submit">
+						<a name="login" href="" ng-click="LoginShow()">立即登录</a>
+					</div>
+					<p>
+						<a href="">忘记密码？</a>|
+						<a href="Regis.html">免费注册</a>
+					</p>
+				</div>
+			</div>
+			<div class="CopyRight" ng-include="'CopyRight.html'"></div>
+            <div class="occ" ng-include="'Occlusion.html'"></div>
+            <script>
+                $('.occ').hide();
+            </script>
+		</div>
+	</body>
+</html>

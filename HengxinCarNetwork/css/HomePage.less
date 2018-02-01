@@ -1,0 +1,487 @@
+body{margin: 0;padding: 0;}
+*{margin: 0;padding:0;}
+li{list-style: none;}
+#demo{
+    display: flex;
+    flex-direction:column ;
+    #header_menu ul li:first-child a{
+        width: 300px;
+        background: #FF4500;
+    }
+    #pic-Carousel{
+        height: 420px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        #myFocus{
+            width: 1355px;
+            height: 420px;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            ul{
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li{
+                    margin: 0;
+                    padding: 0;
+                }
+                img{
+                   width: 100%;
+                   height: 100%;
+                }
+            }
+        }
+    }
+    .Demo-CarType{
+        width: 300px;
+//      height: 413px;
+        position: absolute;
+        top: 210px;
+        left: 1px;
+        margin-left: 99px;
+        background: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        .CarType-head{
+            flex: 1;
+            border-bottom: solid 1px #CCCCCC;
+            ul{
+                height: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: row;                
+                li{
+                    padding-top:10px ;
+                    flex: 1;
+                    cursor: pointer;
+                }
+                li:first-child{
+                    color: orangered;
+                    border-bottom:solid 2px red;
+                }
+            }
+        }
+        .CarInfo-Screen{
+            margin: 0;
+            .CarType-brand{
+                flex: 3;
+                display: flex;
+                flex-direction: column;
+                margin: 0 15px;
+                z-index: 1;
+                border-bottom: solid 1px #CCCCCC;
+                span{margin: 10px 0 0 0;}
+                ul{
+                    margin: 10px 0;
+                    display: flex;
+                    flex-direction: row;
+                    li{
+                        list-style: none;
+                        flex: 1;
+                        text-align: left;
+                        height: 50px;
+                        overflow: hidden;
+                        a{
+                            color: black;
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%;
+                            padding:25px 0 0 10px ;
+                            text-decoration: none;
+                            margin-left: 3px;
+                        }
+                        i{
+                            float: right;
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            margin-top:3px ;
+                            background: url(../../img/RightArrow.png)repeat-x;
+                        }
+                    }
+                    li:last-child{
+                        flex: 0.3;
+                    }
+                    li:hover a{color: orangered;}
+                }
+            }
+        }
+        .CarInfo-Screen:hover{
+            background: white;
+            border-bottom: solid 1px #CCCCCC;
+            box-shadow: 0 1px 5px 0 gray;
+            .CarType-brand{border: none;}
+        }
+        .menu{
+            flex:7;
+            .CarType-Screen{
+                
+                z-index: 100;
+                display: flex;
+                flex-direction: column;
+                border: solid 1px red;
+                margin:15px ;
+                .Screen-Content {
+                    display: flex;
+                    flex-direction: column;
+                    span{
+                        flex: 1;
+                        margin: 15px 0;
+                    }
+                    ul{
+                        flex: 4;
+                        display: flex;
+                        flex-direction: row;
+                        li{flex: 1;}
+                    }
+                }
+                .Screen-Content:first-child span{margin-top: 0;}
+            }
+        }
+        .menu:hover{
+            background: white;
+            border-top: solid 1px #CCCCCC;
+            box-shadow:0 0 0 1px 5px gray;
+        }
+    }
+    .CarInfo-content{
+        height: 800px;
+        background: #EEEEEE;
+        display: flex;
+        flex-direction: column;
+        padding: 0 80px 50px 80px;
+        text-align: center;
+        span{
+            flex: 1;
+            padding-top:30px ;
+            font-size: 28px;
+        }
+        .CarInfo-newCar{
+            flex: 4;
+            display: flex;
+            flex-direction: row;
+            .Carfirst{
+                flex: 1.2;
+                overflow: hidden;
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: inline-block;
+                    padding-top:245px ;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+        .newCar{
+            margin: 0 5px;
+            border: solid 1px #CCCCCC;
+            flex: 1;
+            background: white;
+            a{
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                span{
+                    padding: 0;
+                    margin: 20px 20px;
+                    display: inline-block;
+                    color: black;
+                    font-size: 16px;
+                }
+                p{
+                    position: relative;
+                    top: 125px;
+                    color: grey;
+                    font-size: 12px;
+                }
+                .newCar-CarMoney{
+                    margin:10px 0;
+                    position: relative;
+                    padding: 0 20px;
+                    top: 130px;
+                    display: flex;
+                    flex-direction: column;
+                    height: 80px;
+                    span{
+                        margin: 0;
+                        padding: 0;
+                        text-align: left;
+                        flex: 1;
+                        small{
+                            float: right;
+                            font-size: 16px;
+                            color: orangered;
+                        }
+                    }
+                }
+            }
+        }
+        .newCar:hover{
+            box-shadow: 0 1px 5px darkgray;
+        }
+        .Hrie{
+            margin: 0 5px;
+            border: solid 1px #CCCCCC;
+            flex: 1;
+            background: white;
+             a{
+                width: 100%;
+                height: 100%;
+                display: inline-block;
+                text-decoration: none;
+                color: white;
+                p:nth-child(1){
+                    color:white;
+                    background: orangered;
+                    padding: 10px 0;
+                    height:20px;
+                }
+                p:nth-child(2){
+                    margin: 20px 0;
+                    color: #222222;
+                }
+                .newCar-CarMoney{
+                   position: relative;
+                   top: 105px;
+                    display: flex;
+                    flex-direction: column;
+                    height: 75px;
+                     span{
+                        margin: 10px 20px;
+                        padding: 0;
+                        font-size: 16px;
+                        color: #222222;
+                        text-align: left;
+                        flex: 1;
+                        small{
+                            float: right;
+                            font-size: 16px;
+                            color: orangered;
+                        }
+                    }
+                }
+            }
+        }
+        .Hrie:hover{
+            box-shadow: 0 1px 5px darkgray;
+        }
+    }
+    .brand-selection{
+        height: 400px;
+        margin: 20px 80px;
+        display: flex;
+        flex-direction: row;
+        a{
+            flex: 1.35;
+            text-align: center;
+            text-decoration: none;
+            margin-right: 15px;
+            color: white;
+            padding-top: 360px;
+        }
+        .brand-CarInfo{
+            flex: 5;
+            display: flex;
+            flex-direction: column;
+            ul{
+                margin: 0 5px;
+                padding: 0;
+                background: white;
+                border: solid 1px #CCCCCC ;            
+                flex: 1.2;
+                display: flex;
+                flex-direction:row;
+                li{
+                    list-style: none;
+                    border-right: solid 1px #CCCCCC;
+                    flex: 1;
+                    display: inline-block;
+                    a{
+                        padding-top: 50px;
+                        display:inline-block;
+                        width: 100%;
+                        color: black;
+                    }
+                }
+                li:last-child{border: none;}
+                li:hover{
+                    border-top: solid 2px orangered;
+                    a{color: orangered;}
+                }
+            }
+            .CarInfo-item{
+                flex: 4;
+                margin: 20px 0 0 0;
+                display: flex;
+                flex-direction: row;
+                a{
+                    flex: 1;
+                    border: solid 1px #CCCCCC;
+                    margin: 0 5px;
+                    padding: 0;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    img{
+                        width: 100%;
+                        flex: 3;
+                    }
+                    span{
+                        color: black;
+                        flex: 1;
+                        font-size: 16px;
+                        margin: 20px 5px 10px 5px;
+                        padding: 0;
+                        text-align: left;
+                    }
+                    p{
+                        flex: 1;
+                        color: black;
+                        text-align: left;
+                        font-size: 18px;
+                        margin: 0 5px;
+//                      border: solid 1px red;
+                    }
+                   .s2{
+//                     border: solid 1px blue;  
+                        margin: 0 5px;
+                        padding: 0;
+                       text-align: left;
+                       color: gray;
+                   }
+                    ul{
+                        flex: 1;
+                        margin: 5px 5px 10px 5px;
+                        border: none;
+                        li{
+                            border: solid 1px blue;
+                            margin-left:5px;
+                            height:20px;
+                            font-size: 12px;
+                            border-radius: 2px;
+                            color: orangered;
+                        }
+                        li:first-child{margin: 0;border: solid 1px orangered;}
+                        li:nth-child(2){border: solid 1px #0099FF;color: #0099FF;}
+                        li:nth-child(3){border: solid 1px olivedrab;color: olivedrab;}
+                    }
+                }
+                a:hover{
+                    box-shadow: 0 1px 5px darkgray;
+                }
+            }
+        }
+    }
+    .img-rathing{
+        width: 1185px;
+        margin: 0 auto;
+    }
+    .Car-Safe{
+//      border: solid 1px red;
+        height: 455px;
+        margin: 20px 80px;
+        display: flex;
+        flex-direction: row;
+        a{
+            flex: 1.09;
+            background: url(../../img/HomePage/Ch0007.png)no-repeat;
+            margin-right: 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            padding-top: 410px;
+        }
+        .saleInfo{
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            .saleInfo-item1{
+                flex: 1;
+                margin-bottom: 5px;
+                display: flex;
+                flex-direction: row;
+//              overflow: hidden;
+                a{
+                    flex: 1;
+                    display: block;
+                    margin:0 15px;
+                    padding: 0;
+                    height: 100%;
+                    border: solid 1px #CCCCCC;
+                    span{
+                        color: orangered;
+                        border: solid 1px orangered;
+                        position: relative;
+                        top: 160px;
+                        width: 150px;
+                        height: 30px;
+                        padding-top: 10px;
+                        display: inline-block;
+                        border-radius: 2px;                                        
+                    }
+                }
+                a:first-child{margin-left: 0;}
+                a:last-child{margin-right: 0;}
+            }
+            .saleInfo-item1:last-child{
+                margin: 5px 0 0 0;                
+            }
+            .saleInfo-item1 a:hover{
+                box-shadow: 0 1px 5px darkgray;   
+                span{color: white;background: orangered;}           
+            }
+        }
+    }
+    .CopyRight{
+//      border: solid 1px red;
+        height: 200px;
+        background: #EEEEEE;
+        display: flex;
+        flex-direction: column;
+        .CopyRight-item1{
+            flex: 3;
+//          border: solid 1px red;
+            margin: 0 80px;
+            p{
+                padding: 20px 0;
+//              border: solid 1px blue;
+                text-align: center;
+                font-size: 14px;
+                color: gray;
+//              border-top:solid 1px #CCCCCC ;
+            }
+            p:nth-child(2){
+                border:none;
+                height: 30px;
+                text-align: center;
+                margin: 0;
+                color:gray;
+                a{
+//                  border: solid 1px red;
+                    height: 30px;
+                    text-decoration: none;
+                    color: gray;
+                    padding-top: 5px;
+                    display: inline-block;
+                    img{
+                        vertical-align: text-top;
+                        position: relative;
+                        top: -5px;
+                        width: 30px;
+                        margin: 0;
+                        padding:0;
+                        height: 30px;
+                    }                   
+                }
+            }
+        }
+        .CopyRight-item2{
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+#CopyRight {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+#CopyRight .Copy_Copyinfo {
+  width: 100%;
+  height: 50px;
+  background: #333333 ;
+  text-align: center;
+}
+#CopyRight .Copy_Copyinfo p {
+  color: #5E5E5E;
+  margin-top: 10px ;
+}

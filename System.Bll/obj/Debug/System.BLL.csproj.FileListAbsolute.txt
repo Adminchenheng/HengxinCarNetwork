@@ -1,0 +1,10 @@
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\bin\Debug\System.Bll.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\bin\Debug\System.Bll.pdb
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\bin\Debug\System.DAL.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\bin\Debug\System.Model.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\bin\Debug\System.DAL.pdb
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\bin\Debug\System.Model.pdb
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\obj\Debug\System.BLL.csprojResolveAssemblyReference.cache
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\obj\Debug\System.BLL.csproj.CoreCompileInputs.cache
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\obj\Debug\System.Bll.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.Bll\obj\Debug\System.Bll.pdb

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <link href="../css/Main.css" rel="stylesheet" />
+        <link href="../css/bootstrap.css" rel="stylesheet" />
+        <script src="../js/jquery-2.1.0.js"></script>
+        <script src="../js/angular.js"></script>
+        <script src="../js/dataScript/newCarPage.js"></script>
+	</head>
+	<body>
+		<div id="One" ng-app="appContent" ng-controller="contCarType">
+            <div class="title" ng-include="'TitlePage.html'"><!--这是一个标题页面--></div>
+			<div id="Content">
+				<div class="Content_Path">
+					<a href="javascript:html">首页</a><i> > </i><a href="javascript:html">车型列表页</a>
+				</div>
+				<div class="Content_CarType">
+					<div class="CarType_Row">
+						<span>品牌</span>
+						<p>不限</p>
+						<i></i>
+						<ul id="u1">        <!--这里显示品牌类型-->
+                            <li id="brand" ng-repeat="item in BrandList" ng-click="BrandShow($event)" value={{item.CarBrandID}}>{{item.BrandName}}</li>
+						</ul>
+					</div>
+					<div class="CarType_Row">
+						<span>车价</span>
+						<p>不限</p>
+						<i></i>
+						<ul id="u2">
+							<!--这里显示车价-->
+                            <li id="money" ng-repeat="moey in MoneyList" ng-click="MoneyShow($event)" value={{moey.CarMoneyID}} >{{moey.MoneyType}}万</li>
+						</ul>
+					</div>
+					<div class="CarType_Row">
+						<span>车型</span>
+						<p>不限</p>
+						<i></i>
+						<ul id="u3">
+							<!--这里显示车身形态-->
+                            <li id="body" ng-repeat="body in BodyList" ng-click="BodyShow($event)" value={{body.CarBodyID}} >{{body.BodyName}}</li>
+						</ul>
+					</div>
+				</div>
+				<div class="Content_Contrast">
+					<ul>
+						<li><a href="javascrpt:html">热销推荐</a></li>
+						<li><a href="javascript:html">月租最低</a></li>
+						<li><a href="javascript:html">人气最高</a></li>
+					</ul>
+				</div>
+				<div class="container">
+					<div class="row">
+                        <div id="div_One" class="col-lg-3" ng-repeat="item in CarList">              
+                            <div class="div_One-Content">
+                                <div class="div_One-Title">
+                                    <span>首次支出<b>{{item.FristSpeeding}}万</b></span>
+                                    <span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<b>{{item.Rental}}元</b></span>
+                                    <p>热销型首付一万</p>
+                                </div>
+                                <img src="../img/newModelPic/{{item.CarID}}.jpg" />
+                                <div class="div_One-Info">
+                                    <b>{{item.CarName}}&nbsp;&nbsp;{{item.CarStyle}}&nbsp;&nbsp;{{item.CarType}}</b>
+                                    <p>厂商指导价:{{item.Vendor}}万</p>
+                                </div>
+                                <a href="" ng-click="ninin($event)" id="{{item.CarID}}"></a>
+                            </div>
+                        </div>
+					</div>
+					<div class="row" id="rowTow">
+						<div class="col-lg-12">
+                            <a name="all" ng-click="allData()">全部车源></a>
+                            <a name="upPage" ng-click="topPage()">上一页</a>
+                            <span ng-click="pageShow($event)" ng-repeat="item in PageList">{{item}}</span>
+                            <a name="nextPage" ng-click="bottomPage()">下一页</a>
+                        </div>
+					</div>	
+				</div>
+			</div>
+			<div id="CopyRight">
+				<div class="Copy_One">
+					<span>申请流程</span>
+				</div>
+				<div style="background:url(../img/HomePage/Application.png)no-repeat;height: 150px;"></div>
+				<div class="Copy_Copyinfo" ng-include="'CopyRight.html'">
+					<!--版权页面-->
+				</div>
+			</div>         
+            <div class="occ" ng-include="'Occlusion.html'"></div>
+            <script>
+                $('.occ').hide();
+            </script>
+		</div>
+	</body>
+</html>

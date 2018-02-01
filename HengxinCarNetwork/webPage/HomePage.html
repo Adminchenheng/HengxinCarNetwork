@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <link href="../css/HomePage.css" rel="stylesheet" />
+        <script src="../js/angular.js"></script>
+        <script src="../js/jquery-2.1.0.js"></script>
+        <script src="../js/dataScript/HomePageReader.js"></script>
+        <script src="../js/myfocus-2.0.1.min.js"></script>
+		<script>
+			myFocus.set({
+				id:'myFocus',//ID
+				pattern:'mF_taobao2010',//风格
+				time:3,//切换时间间隔(秒)
+//				trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+//				loadIMGTimeout:3;
+			});
+		</script>
+	</head>
+	<body>
+		<div id="demo" ng-app="appDemo" ng-controller="contDemo">			
+			<div ng-include="'TitlePage.html'"></div>
+			<div id="pic-Carousel">
+				<div id="myFocus"><!--焦点图盒子-->
+					<div class="pic"><!--图片列表-->
+					  	<ul>
+					        <li><a href="#1"><img src="../img/HomePage/Ch0015.png"  /></a></li>
+					        <li><a href="#2"><img src="../img/HomePage/Ch0016.png"/></a></li>
+                            <li><a href="#1"><img src="../img/HomePage/Ch0015.png" /></a></li>
+                            <li><a href="#2"><img src="../img/HomePage/Ch0016.png" /></a></li>
+					  	</ul>
+					</div>
+				</div>
+			</div>
+			<div class="Demo-CarType">
+				<div class="CarType-head">
+					<ul>
+						<li>新车</li>
+						<li>二手车</li>
+					</ul>
+				</div>
+				<div class="CarInfo-Screen">
+					<div class="CarType-brand">
+						<span>品牌</span>
+						<ul>
+							<li ng-repeat="item in BrandList"><a href="#" style="background: url(../img/CarIcon/{{item.CarBrandID}}.png)no-repeat 13px 5px">{{item.BrandName}}</a></li>
+							<!--<li><a href="#" style="background: url(../img/HomePage/brand.png)no-repeat 5px 0;">本田</a></li>
+							<li><a href="#" style="background: url(../img/HomePage/Ch0013.png)no-repeat 12px 0;">宝马</a></li>
+							<li><a href="#" style="background: url(../img/HomePage/Ch0014.png)no-repeat 12px 5px;">传祺</a></li>-->						
+							<li><i></i></li>
+						</ul>
+					</div>
+				</div>
+				<div class="menu">
+					<div class="CarType-Screen">
+						<div class="Screen-Content">
+							<span>车价</span>
+							<ul>
+								<li ng-repeat="item in CarMoneyList"><a>{{item.MoneyType}}万</a></li>
+								<!--<li><a>3-5万</a></li>
+								<li><a>3-5万</a></li>
+								<li><a>3-5万</a></li>
+								<li><a>3-5万</a></li>-->
+							</ul>
+						</div>
+						<div class="Screen-Content">
+                            <span>级别</span>
+                            <ul>
+                                <li ng-repeat="item in BodyList"><a>{{item.BodyName}}</a></li>
+                                <!--<li><a>3-5万</a></li>
+                                <li><a>3-5万</a></li>
+                                <li><a>3-5万</a></li>
+                                <li><a>3-5万</a></li>-->
+                            </ul>
+						</div>
+						<div class="Screen-Content">
+							<!--<span>级别</span>-->
+							<!--<ul>
+								<!--<li ng-repeat="item in BodyList"><a></a></li>-->
+								<!--<li><a>3-5万</a></li>
+								<li><a>3-5万</a></li>
+								<li><a>3-5万</a></li>
+								<li><a>3-5万</a></li>-->
+							<!--</ul>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<img src="../img/HomePage/Ch0001.png" style="width: 100%;height: 150px;">
+			<div class="CarInfo-content">
+				<span>万元新车开走吧</span>
+				<div class="CarInfo-newCar">
+					<div class="Carfirst">
+						<a href="#" style="background: url(../img/HomePage/Ch0002.png)no-repeat;">查看{{newCarCount}}款车源&nbsp;></a>
+					</div>
+					<div class="newCar" ng-repeat="item in newCarInfoOne">
+						<a href="#" style="background: url(../img/newModelPic/{{item.CarID}}.jpg)no-repeat 13px 50px;">
+							<span><!--哥瑞 2018 豪华舒适版-->{{item.CarName}}&nbsp;&nbsp;{{item.CarStyle}}&nbsp;&nbsp;{{item.CarType}}</span>
+							<p>日供仅需21元</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>{{item.FristSpeeding}}万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>{{item.Rental}}元</small></span>
+							</div>
+						</a>
+					</div>
+					<!--<div class="newCar">
+						<a href="#" style="background: url(../img/HomePage/CAR201712125.jpg)no-repeat 13px 50px;">
+							<span>哥瑞 2018 豪华舒适版</span>
+							<p>日供仅需21元</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>1.00万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>666元</small></span>
+							</div>
+						</a>
+					</div>
+					<div class="newCar">
+						<a href="#" style="background: url(../img/HomePage/CAR201712125.jpg)no-repeat 13px 50px;">
+							<span>哥瑞 2018 豪华舒适版</span>
+							<p>日供仅需21元</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>1.00万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>666元</small></span>
+							</div>
+						</a>
+					</div>
+					<div class="newCar">
+						<a href="#" style="background: url(../img/HomePage/CAR201712125.jpg)no-repeat 13px 50px;">
+							<span>哥瑞 2018 豪华舒适版</span>
+							<p>日供仅需21元</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>1.00万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>666元</small></span>
+							</div>
+						</a>
+					</div>-->
+				</div>
+				<span>分期购车爆款趴</span>
+				<div class="CarInfo-newCar">
+					<div class="Carfirst">
+						<a href="#" style="background: url(../img/HomePage/Ch0003.png)no-repeat;">查看{{newCarCount}}款车源&nbsp;></a>
+					</div>
+					<div class="Hrie" ng-repeat="item in newCarInfoTow">
+						<a href="#" style="background: url(../img/newModelPic/{{item.CarID}}.jpg)no-repeat 13px 80px;">
+							<p>低首付 极速放款</p>
+							<p>{{item.CarName}}&nbsp;&nbsp;{{item.CarStyle}}&nbsp;&nbsp;{{item.CarType}}</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>{{item.FristSpeeding}}万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>{{item.Rental}}元</small></span>
+							</div>
+						</a>
+					</div>
+					<!--<div class="Hrie">
+						<a href="#" style="background: url(../img/HomePage/CAR201712125.jpg)no-repeat 13px 80px;">
+							<p>低首付 极速放款</p>
+							<p>哥瑞</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>1.00万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>666元</small></span>
+							</div>
+						</a>
+					</div>
+					<div class="Hrie">
+						<a href="#" style="background: url(../img/HomePage/CAR201712125.jpg)no-repeat 13px 80px;">
+							<p>低首付 极速放款</p>
+							<p>哥瑞</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>1.00万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>666元</small></span>
+							</div>
+						</a>
+					</div>
+					<div class="Hrie">
+						<a href="#" style="background: url(../img/HomePage/CAR201712125.jpg)no-repeat 13px 80px;">
+							<p>低首付 极速放款</p>
+							<p>哥瑞</p>
+							<div class="newCar-CarMoney">
+								<span>首次支出<small>1.00万</small></span>
+								<span>月&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;租<small>666元</small></span>
+							</div>
+						</a>
+					</div>-->
+				</div>				
+			</div>		
+			<div class="brand-selection">
+				<a href="#" style="background: url(../img/HomePage/Ch0004.png)no-repeat;">查看更多车源&nbsp;></a>	
+				<div class="brand-CarInfo">
+					<ul>
+						<li ng-repeat="item in BrandList"><a href="#" style="background: url(../img/CarIcon/{{item.CarBrandID}}.png)no-repeat 76px 20px;" ng-click="CarDataShow($event)" id="{{item.CarBrandID}}">{{item.BrandName}}</a></li>
+						<!--<li><a href="#" style="background: url(../img/HomePage/Ch0005.png)no-repeat 70px 10px;">丰田</a></li>
+						<li><a href="#" style="background: url(../img/HomePage/Ch0005.png)no-repeat 70px 10px;">丰田</a></li>
+						<li><a href="#" style="background: url(../img/HomePage/Ch0005.png)no-repeat 70px 10px;">丰田</a></li>
+						<li><a href="#" style="background: url(../img/HomePage/Ch0005.png)no-repeat 70px 10px;">丰田</a></li>-->
+					</ul>
+					<div class="CarInfo-item">
+						<a href="#" ng-repeat="item in secondData">
+							<img src="../img/secondPic/{{item.CarID}}001.jpg">
+							<span class="sOne">{{item.CarName}}&nbsp;&nbsp;{{item.CarStyle}}&nbsp;&nbsp;{{item.CarType}}</span>
+							<span class="s2">厂商指导价:{{item.Vendor}}万</span>
+							<p>{{item.ReferPrice}}万<small>首付{{item.FristSpeeding}}万</small></p>
+							<ul>
+								<li>30天可退</li>
+								<li>一年保修</li>
+								<li>分期购车</li>
+							</ul>
+						</a>
+						<!--<a href="#">
+							<img src="../img/HomePage/CAR201712125.jpg">
+							<span>哥瑞 2018款 豪华尊享舒适版裸嫁时代佛家居服</span>
+							<span class="s2">厂商指导价:20.00万</span>
+							<p>12.00万<small>首付4.16万</small></p>
+							<ul>
+								<li>30天可退</li>
+								<li>一年保修</li>
+								<li>分期购车</li>
+							</ul>
+						</a>
+						<a href="#">
+							<img src="../img/HomePage/CAR201712125.jpg">
+							<span>哥瑞 2018款 豪华尊享舒适版裸嫁时代佛家居服</span>
+							<span class="s2">厂商指导价:20.00万</span>
+							<p>12.00万<small>首付4.16万</small></p>
+							<ul>
+								<li>30天可退</li>
+								<li>一年保修</li>
+								<li>分期购车</li>
+							</ul>
+						</a>
+						<a href="#">
+							<img src="../img/HomePage/CAR201712125.jpg">
+							<span>哥瑞 2018款 豪华尊享舒适版裸嫁时代佛家居服</span>
+							<span class="s2">厂商指导价:20.00万</span>
+							<p>12.00万<small>首付4.16万</small></p>
+							<ul>
+								<li>30天可退</li>
+								<li>一年保修</li>
+								<li>分期购车</li>
+							</ul>
+						</a>-->
+					</div>
+				</div>
+			</div>
+			<img class="img-rathing" src="../img/HomePage/Ch0006.png" />
+			<div class="Car-Safe">
+				<a href="#">汽车首页&nbsp;></a>
+				<div class="saleInfo">
+					<div class="saleInfo-item1">
+						<a href="#" style="background: url(../img/Insurance/{{item.InsuComplayID}}.png)no-repeat 0 -30px;" ng-repeat="item in dataOne" ><span>去投保</span></a>
+						<!--<a href="#" style="background: url(../img/Insurance/Ch00005.png)no-repeat 0 -30px;"><span>去投保</span></a>
+						<a href="#" style="background: url(../img/Insurance/Ch00006.png)no-repeat 0 -30px;"><span>去投保</span></a>-->
+					</div>                                 
+					<div class="saleInfo-item1">           
+						<a href="#" style="background: url(../img/Insurance/{{item.InsuComplayID}}.png)no-repeat 0 -30px;" ng-repeat="item in dataTow"><span>去投保</span></a>
+						<!--<a href="#" style="background: url(../img/Insurance/Ch00008.png)no-repeat 0 -30px;"><span>去投保</span></a>
+						<a href="#" style="background: url(../img/Insurance/Ch00009.png)no-repeat 0 -30px;"><span>去投保</span></a>-->
+					</div>
+				</div>
+			</div>
+			<div class="CopyRight">
+				<div class="CopyRight-item1">
+					<p>经营许可证编号：京ICP备15006372号-5  公安备案号码：京公网安备 11010802020005号        CopyRight © 2015-2018 taoche.com版权所有 珠海恒信信息科技有限公司</p>
+					<p>
+						<a href="#"><img src="../img/HomePage/Ch0008.png">经营性网站备案信息</a>
+						<a href="#"><img src="../img/HomePage/Ch0009.png">珠海斗门警方提醒</a>
+						<a href="#"><img src="../img/HomePage/Ch0010.png" style="width: 110px;"></a>
+						<a href="#"><img src="../img/HomePage/Ch0011.png" style="width: 130px;"></a>
+					</p>
+				</div>
+				<div class="CopyRight-item2" ng-include="'CopyRight.html'"></div>
+			</div>	
+		</div>
+	</body>
+</html>

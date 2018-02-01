@@ -1,0 +1,8 @@
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\bin\Debug\System.DAL.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\bin\Debug\System.DAL.pdb
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\bin\Debug\System.Model.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\bin\Debug\System.Model.pdb
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\obj\Debug\System.DAL.csprojResolveAssemblyReference.cache
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\obj\Debug\System.DAL.csproj.CoreCompileInputs.cache
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\obj\Debug\System.DAL.dll
+E:\wook\二学年\个人项目\HengxinCarNetwork\System.DAL\obj\Debug\System.DAL.pdb
